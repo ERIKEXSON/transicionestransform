@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+*{
+    margin:0;
+    padding: 0;
+}
+nav {
+    background-color: crimson;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none; 
+}
+  nav ul li div{
+    background-color:trasparent;
+    text-align: center;
+    padding: 20px 10px;
+    display: inline-block;
+    transition: all .3s linear;
+}
+ nav ul li div:hover{
+     background-color: blueviolet;
+ }
+  nav ul li a{
+    display: inline-block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    transition: all 1s linear;
+}
+nav ul li div a:hover{
+    border: solid 2px white;
+}
+.active
+{
+    background-color:darkorchid;
+    border: solid white;
+}
+body{
+    background-color:cornflowerblue;
+}
+main>h2{
+    padding: 45px 0px;
+    text-align: center;
+    color: black;
+    background-color: darkslategrey;
+    font-size: 35px;
+    }
+/*pagina 1*/
+.trans1>article{
+    position: absolute;
+    width: 1100px;
+    height: 350px;
+    background-color: transparent;
+    top:200px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;    
+}
+.trans1>article>footer{
+    margin:0 21px 0 21px;
+    width: 500px;
+    height: 350px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.trans1>article>footer>img{
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+.trans1>article>footer:hover>img{
+    transform: scale(1.2);
+}
+.trans1>article>footer>div{
+    background-color: rgba(232, 223, 235, 0.274);
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    top:0;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: 0s;
+}
+.trans1>article>footer:hover>div{
+    transform: scale(1);
+    overflow: hidden;
+}
+.trans1>article>footer>div>h4{
+    color: transparent;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 50px;
+    transform: translateY(-100px);
+    transition-property: all .5s linear;
+    transition-duration: 1s;
+    transition-delay: .5s;
+}
+.trans1>article>footer>div>p{
+    padding: 0 60px;
+    color: transparent;
+    text-align: justify;
+    margin-top: 40px;
+    font-size: 20px;
+    transform: translateY(100px);
+    transition-property: all .5s linear;
+    transition-duration: 1s;
+    transition-delay: .5s;
+}
+.trans1>article>footer>div:hover>h4{
+    transform: translateY(0);
+    color: black;
+}
+.trans1>article>footer>div:hover>p{
+    transform: translateY(0);
+    color: black;
+}
+.trans1>article>footer>div>a{
+    display: inline-block;
+    color:transparent;
+    margin-top: 40px;
+    padding: 15px 25px;
+    background-color:transparent;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 180px;
+    transition-property: all .5 linear;
+    transition-delay: .5s;
+    transition-duration :1s;
+}
+.trans1>article>footer>div:hover>a{
+    background-color: rgb(15, 15, 15);
+    color:#158eca;
+}
+/* pagina 2*/
+.tranfis{
+    padding: 45px 0px;
+    text-align: center;
+    color: black;
+    background-color: darkslategrey;
+    font-size: 35px;
+    }
+.trans2>article{
+    position: absolute;
+    width: 1100px;
+    height: 350px;
+    background-color: transparent;
+    top:200px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;  
+    overflow: hidden;
+}
+.trans2>article>footer{
+    margin:0 21px 0 21px;
+    width: 500px;
+    height: 350px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.trans2>article>footer>img{
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+.trans2>article>footer:hover>img{
+    transform: scale(1.2);
+}
+.trans2>article>footer>div{
+    background-color: rgba(232, 223, 235, 0.274);
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    top:0;
+    overflow: hidden;
+    text-align: center;
+    transition: all .5s linear;
+    transform: translateX(425px) translateY(425px) rotate(90deg);
+}
+.trans2>article>footer:hover>div{
+transform: translate(0) rotate(0);
+}
+.trans2>article>footer>div>h4{
+    color: transparent;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 50px;
+    transform: translate(200px, -200px);
+    transition-property: all .5s linear;
+    transition-duration: 1s;
+    transition-delay: .5s;
+}
+.trans2>article>footer:hover>div>h4{
+    transform: translate(0);
+    color: black;
+}
+.trans2>article>footer>div>p{
+    padding: 0 60px;
+    color: transparent;
+    text-align: justify;
+    margin-top: 40px;
+    font-size: 20px;
+    transform: translate(-100px, 100px);
+    transition-property: all .5s linear;
+    transition-duration: 1s;
+    transition-delay: .5s;
+}
+.trans2>article>footer:hover>div>p{
+    transform: translate(0);
+    color: black;
+}.trans2>article>footer>div>a{
+    display: inline-block;
+    color:transparent;
+    margin-top: 10px;
+    padding: 15px 25px;
+    background-color:transparent;
+    text-align: center;
+    text-decoration: none;
+    transform: translateY(20px);
+    transition:all .5s linear;
+    transition-delay: .5s;
+}
+.trans2>article>footer>div:hover>a{
+    background-color: rgb(15, 15, 15);
+    color:#158eca;
+    transform: translateY(0);
+}
+ /*pagina 3*/
+ .trans3>article{
+    position: absolute;
+    width: 1100px;
+    height: 350px;
+    background-color: transparent;
+    top:200px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;  
+    overflow: hidden;
+}
+.trans3>article>footer{
+    margin:0 21px 0 21px;
+    width: 500px;
+    height: 350px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.trans3>article>footer>img{
+    transform: rotate(0);
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+.trans3>article>footer:hover>img{
+    transform: scale(1.5) rotate(-15deg);
+}
+.trans3>article>footer>div{
+    background-color: rgba(232, 223, 235, 0.274);
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    top:0;
+    overflow: hidden;
+    text-align: center;
+    transition: all .5s linear;
+    transform: translateX(425px) translateY(-425px) rotate(90deg);
+}
+.trans3>article>footer:hover>div{
+transform: translate(0) rotate(0);
+}
+.trans3>article>footer>div>h4{
+    color: transparent;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 50px;
+    transform: translate(-200px, -200px) rotate(-25deg);
+    transition-property: all .5s linear;
+    transition-duration: 1s;
+    transition-delay: .5s;
+}
+.trans3>article>footer:hover>div>h4{
+    transform: translate(0) rotate(0);
+    color: black;
+}
+.trans3>article>footer>div>p{
+    padding: 0 60px;
+    color: transparent;
+    text-align: justify;
+    margin-top: 40px;
+    font-size: 20px;
+    transform: translate(100px, -100px) rotate(30deg);
+    transition-property: all .5s linear;
+    transition-duration: 1s;
+    transition-delay: .5s;
+}
+.trans3>article>footer:hover>div>p{
+    transform: translate(0);
+    color: black;
+}.trans3>article>footer>div>a{
+    display: inline-block;
+    color:transparent;
+    margin-top: 10px;
+    padding: 15px 25px;
+    background-color:transparent;
+    text-align: center;
+    text-decoration: none;
+    transform: translateY(-150px);
+    transition:all .3s linear;
+    transition-delay: .3s;
+}
+.trans3>article>footer>div:hover>a{
+    background-color: rgb(15, 15, 15);
+    color:#158eca;
+    transform: translateY(0);
+}
+/*pagina 4*/
+.trans4>article{
+    position: absolute;
+    width: 1100px;
+    height: 350px;
+    background-color: transparent;
+    top:200px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;    
+}
+.trans4>article>footer{
+    margin:0 21px 0 21px;
+    width: 500px;
+    height: 350px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.trans4>article>footer>img{
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+.trans4>article>footer:hover>img{
+    transform: scale(1.2);
+}
+.trans4>article>footer>div{
+    background-color: rgba(232, 223, 235, 0.274);
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    top:0;
+    transform: scale(0) rotate(720deg);
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: 0s;
+}
+.trans4>article>footer:hover>div{
+    transform: scale(1) rotate(0);
+    overflow: hidden;
+}
+.trans4>article>footer>div>h4{
+    color: transparent;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 50px;
+    transform: translateX(150px);
+    transition-property: all .5s linear;
+    transition-duration: 1s;
+    transition-delay: .5s;
+}
+.trans4>article>footer>div>p{
+    padding: 0 60px;
+    color: transparent;
+    text-align: justify;
+    margin-top: 40px;
+    font-size: 20px;
+    transform: translateX(-150px);
+    transition-property: all .5s linear;
+    transition-duration: 1s;
+    transition-delay: .5s;
+}
+.trans4>article>footer>div:hover>h4{
+    transform: translate(0);
+    color: black;
+}
+.trans4>article>footer>div:hover>p{
+    transform: translate(0);
+    color: black;
+}
+.trans4>article>footer>div>a{
+    display: inline-block;
+    color:transparent;
+    margin-top: 4px;
+    padding: 15px 25px;
+    background-color:transparent;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 180px;
+    transform: translateY(150px);
+    transition:all .5s linear;
+    transition-delay: .5s;
+}
+.trans4>article>footer>div:hover>a{
+    background-color: rgb(15, 15, 15);
+    color:#158eca;
+    transform:translateY(0);
+}
+/*pagina 5*/
+.trans5>article{
+    position: absolute;
+    width: 1100px;
+    height: 350px;
+    background-color: transparent;
+    top:200px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;    
+    overflow: hidden;
+}
+.trans5>article>footer{
+    margin:0 21px 0 21px;
+    width: 500px;
+    height: 350px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.trans5>article>footer>div{
+    background-color: rgba(232, 223, 235, 0.274);
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    top:0;
+    transform: translate(-500px, 350px);
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: 0s;
+}
+.trans5>article>footer:hover>div{
+    transform: translate(0,0);
+    overflow: hidden;
+}
+.trans5>article>footer>div>h4{
+    color: transparent;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 50px;
+    transform: scale(0) rotate(720deg);
+    transition-property: all .5s linear;
+    transition-duration: 1s;
+    transition-delay: .5s;
+}
+.trans5>article>footer>div>p{
+    padding: 0 60px;
+    color: transparent;
+    text-align: justify;
+    margin-top: 40px;
+    font-size: 20px;
+    transform: translate(-150px, 150px);
+    transition-property: all .5s linear;
+    transition-duration: 1s;
+    transition-delay: .5s;
+}
+.trans5>article>footer>div:hover>h4{
+    transform: scale(1) rotate(0deg);
+    color: black;
+}
+.trans5>article>footer>div:hover>p{
+    transform: translate(0,0);
+    color: black;
+}
+.trans5>article>footer>div>a{
+    display: inline-block;
+    color:transparent;
+    margin-top: 4px;
+    padding: 15px 25px;
+    background-color:transparent;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 180px;
+    transform: scale(0) rotate(720deg);
+    transition:all .5s linear;
+    transition-delay: .5s;
+}
+.trans5>article>footer>div:hover>a{
+    background-color: rgb(15, 15, 15);
+    color:#158eca;
+    transform: scale(1) rotate(0deg);
+}/*pagina 6*/
+.trans6>article{
+    position: absolute;
+    width: 1100px;
+    height: 350px;
+    background-color: transparent;
+    top:200px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;    
+    overflow: hidden;
+}
+.trans6>article>footer{
+    margin:0 21px 0 21px;
+    width: 500px;
+    height: 350px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.trans6>article>footer>aside{
+    background-color:transparent;
+    width: 500px;
+    height: 350px;
+    display: inline-block;
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: all .5s linear;
+    transition-delay: .2s;
+}
+.trans6>article>footer:hover>aside{
+    background-color: rgba(255, 255, 255, 0.63);
+}
+.trans6>article>footer>img{
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+.trans6>article>footer:hover>img{
+    transform: scale(1.5);
+}
+.trans6>article>footer>div{
+    background-color: rgb(215, 120, 247);
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    top:0;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: 0s;
+}
+.trans6>article>footer:hover>div{
+    transform: scale(1);
+    overflow: hidden;
+}
+.trans6>article>footer>div>h4{
+    color: transparent;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 50px;
+    transform: scale(0);
+    transition-property: all .5s linear;
+    transition-duration: 1s;
+    transition-delay: .5s;
+}
+.trans6>article>footer>div>p{
+    padding: 0 60px;
+    color: transparent;
+    text-align: justify;
+    margin-top: 40px;
+    font-size: 20px;
+    transform: scale(0);
+    transition-property: all .5s linear;
+    transition-duration: 1s;
+    transition-delay: .5s;
+}
+.trans6>article>footer>div:hover>h4{
+    transform: scale(1);
+    color: black;
+}
+.trans6>article>footer>div:hover>p{
+    transform: scale(1);
+    color: black;
+}
+.trans6>article>footer>div>a{
+    display: inline-block;
+    color:transparent;
+    margin-top: 4px;
+    padding: 15px 25px;
+    background-color:transparent;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 180px;
+    transform: scale(0) rotate(720deg);
+    transition:all .5s linear;
+    transition-delay: .5s;
+}
+.trans6>article>footer>div:hover>a{
+    background-color: rgb(15, 15, 15);
+    color:#158eca;
+    transform: scale(1) rotate(0deg);
+}
