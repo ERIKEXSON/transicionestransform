@@ -10,32 +10,41 @@ nav {
 nav ul li {
     display: inline-block;
     list-style: none; 
+    vertical-align: top;
 }
-  nav ul li div{
-    background-color:trasparent;
-    text-align: center;
-    padding: 20px 10px;
-    display: inline-block;
-    transition: all .3s linear;
+nav ul li:hover a{
+    background-color:darkorchid;
 }
- nav ul li div:hover{
-     background-color: blueviolet;
- }
-  nav ul li a{
+ nav ul li a{
     display: inline-block;
-    padding: 20px 20px;
+    position:relative;
+    padding: 15px 20px;
     text-decoration: none;
     color: white;
     font-size: 23px;
-    transition: all 1s linear;
+    transition: all .3s linear;
 }
-nav ul li div a:hover{
-    border: solid 2px white;
+nav ul li a div{
+    position: absolute;
+    top:8px;
+    left: 8px;
+    bottom: 8px;
+    right: 8px;
+    border: solid 2px rgba(255, 255, 255, 0.384);
+    transition: all .4s linear;
+    transform: scale(1.2);
+    opacity: 0;
 }
-.active
-{
+nav ul li a:hover div{
+    transform: scale(1);
+    opacity: 1;
+}
+.active{
     background-color:darkorchid;
-    border: solid white;
+}
+.active div{
+    transform: scale(1);
+    opacity: 1;
 }
 body{
     background-color:cornflowerblue;
@@ -558,9 +567,9 @@ transform: translate(0) rotate(0);
     font-size: 28px;
     margin-top: 50px;
     transform: scale(0);
-    transition-property: all .5s linear;
+    transition-property: all .3s linear;
     transition-duration: 1s;
-    transition-delay: .5s;
+    transition-delay: .3s;
 }
 .trans6>article>footer>div>p{
     padding: 0 60px;
@@ -569,9 +578,9 @@ transform: translate(0) rotate(0);
     margin-top: 40px;
     font-size: 20px;
     transform: scale(0);
-    transition-property: all .5s linear;
+    transition-property: all .3s linear;
     transition-duration: 1s;
-    transition-delay: .5s;
+    transition-delay: .3s;
 }
 .trans6>article>footer>div:hover>h4{
     transform: scale(1);
